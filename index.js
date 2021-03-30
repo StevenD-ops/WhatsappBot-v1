@@ -773,7 +773,7 @@ case 'timer':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					prefix = args[0]
-					reply(`O prefix foi alterado com sucesso para : ${prefix}`)
+					reply(`ya bro, ahora es : ${prefix}`)
 					break
 				case 'meme':
 					meme = await kagApi.memes()
