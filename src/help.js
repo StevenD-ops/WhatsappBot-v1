@@ -1,12 +1,11 @@
 const help = (prefix) => {
 	return `
-「 *Shan Bot* 」
+「 *Botcito* 」
 
 ◪ *Información*
   ❏ Comando: 「  ${prefix}  」
-  ❏ Creador: Shanduy
-  ❏ Como instalar el bot: https://youtu.be/rfxuYsWGmQo
-  ❏ Instagram: https://www.instagram.com/thepavos?r=nametag
+  ❏ Creador: StevenD
+  ❏ Como instalar el bot: Solo agregre a sus contacto a Botcito y registrese.
 
 ◪ *SOBRE*
   │
@@ -21,7 +20,7 @@ const help = (prefix) => {
   ├─ ❏ ${prefix}sticker
   ├─ ❏ ${prefix}stickergif
   ├─ ❏ ${prefix}toimg
-  └─ ❏ ${prefix}tomp3 
+  └─ ❏ ${prefix}tomp3
 
 ◪ *DESCARGAS*
   │
@@ -51,6 +50,10 @@ const help = (prefix) => {
   ├─ ❏ ${prefix}timer
   ├─ ❏ ${prefix}fml
   └─ ❏ ${prefix}fml2
+
+	hermano tengo hambre
+	hazme una donación
+
 `
 }
 

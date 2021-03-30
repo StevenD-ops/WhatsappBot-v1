@@ -1,1 +1,5 @@
-### BELUM SELESAI KAK, MASIH COMING SOON
+### Benito Antonio Martínez Ocasio, ey
+## Directamente del espacio
+## Me pongo Rolex como si fueran Casio, ey
+## Modelo de revista sin gimnasio
+## ¡Ring, ring! La calle me llamó
