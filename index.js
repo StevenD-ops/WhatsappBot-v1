@@ -1311,7 +1311,7 @@ case 'timer':
                                   case 'daftar':
 					client.updatePresence(from, Presence.composing)
 					if (isUser) return reply('Ya estas registrado gordo trolo')
-					if (args.length < 1) return reply(`Incorrecto \nCommand : ${prefix}daftar Nombre|Edad\nContoh : ${prefix}daftar Shanduy|25`)
+					if (args.length < 1) return reply(`Incorrecto \nCommand : ${prefix}daftar Nombre|Edad\nContoh : ${prefix}daftar Botcito|20`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
