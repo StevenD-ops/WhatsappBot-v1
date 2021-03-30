@@ -1,5 +1,6 @@
-# SteeveBot
-Pasos para instalar el bot via termux (para ubuntu utilizar npm install)
+# ShanBot
+Pasos para instalar el bot via termux
+https://youtu.be/rfxuYsWGmQo
 
 pkg install git
 
@@ -11,17 +12,12 @@ pkg install nodejs
 
 pkg install npm
 
-git clone https://github.com/StevenD-ops/WhatsappBot-v1.git
+git clone https://github.com/shanduy/ShanBot
 
-cd WhatsappBot-v1
+cd ShanBot
 
 bash install.sh
 
 npm start
 
 Escaneas el QR y listo comando para activarlo  *menu
-
-## whatsapp numero
-* [`WhatsApp`](wa.me/18299416234)
-### Quieres aportar a la causa
-*  18299416234

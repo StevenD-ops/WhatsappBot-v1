@@ -1,10 +1,12 @@
 const help = (prefix) => {
 	return `
-「 *Botcito* 」
+「 *Shan Bot* 」
 
 ◪ *Información*
   ❏ Comando: 「  ${prefix}  」
-  ❏ Creador: Steven D.
+  ❏ Creador: Shanduy
+  ❏ Como instalar el bot: https://youtu.be/rfxuYsWGmQo
+  ❏ Instagram: https://www.instagram.com/thepavos?r=nametag
 
 ◪ *SOBRE*
   │
@@ -18,19 +20,12 @@ const help = (prefix) => {
   │
   ├─ ❏ ${prefix}sticker
   ├─ ❏ ${prefix}stickergif
-	├─ ❏ ${prefix}ttp
   ├─ ❏ ${prefix}toimg
-  └─ ❏ ${prefix}tomp3
+  └─ ❏ ${prefix}tomp3 
 
-◪ *Descargas*
+◪ *DESCARGAS*
   │
-  ├─ ❏ ${prefix}pinterest
-  ├─ ❏ ${prefix}ytmp3
-  ├─ ❏ ${prefix}ytmp4
-  └─ ❏ ${prefix}tiktok`
-◪ *NSFW*
-│
-├─ ❏ ${prefix}nsfwmenu
+  └─ ❏ ${prefix}ytmp4
 
 ◪ *AUDIO*
   │
@@ -49,24 +44,12 @@ const help = (prefix) => {
   │
   ├─ ❏ ${prefix}send
   ├─ ❏ ${prefix}wame
-  ├─ ❏ ${prefix}virtex (congela ws)
+  ├─ ❏ ${prefix}virtex (Hernqn)
   ├─ ❏ ${prefix}exe
   ├─ ❏ ${prefix}qrcode
   ├─ ❏ ${prefix}afk
   ├─ ❏ ${prefix}timer
   ├─ ❏ ${prefix}fml
-	├─ ❏ ${prefix}wibu
-  ├─ ❏ ${prefix}TOD
-  ├─ ❏ ${prefix}stalk
-  ├─ ❏ ${prefix}search
-  ├─ ❏ ${prefix}music
-	├─ ❏ ${prefix}meme
-	├─ ❏ ${prefix}logomaker
-	├─ ❏ ${prefix}information
-	├─ ❏ ${prefix}imagemaker
-	├─ ❏ ${prefix}help
-	├─ ❏ ${prefix}fun
-	├─ ❏ ${prefix}education
   └─ ❏ ${prefix}fml2
 `
 }

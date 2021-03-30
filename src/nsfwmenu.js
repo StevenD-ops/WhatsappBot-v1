@@ -1,5 +1,5 @@
 const nsfwmenu = (prefix, pushname) => {
-    return `Comandos para ver pornito riko
+    return `Comandos para ver pornito
     ◪ *NSFW*
   │
   ├─ ❏ ${prefix}nsfwbobs

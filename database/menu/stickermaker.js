@@ -16,6 +16,6 @@ const stickermaker = (prefix, botName, ownerName) => {
   │
   ├─ ❏ ${prefix}sticker
   ├─ ❏ ${prefix}stickergif
-  └─ ❏ ${prefix}ttp
+  └─ ❏ ${prefix}ttp`
 }
 exports.stickermaker = stickermaker
