@@ -1732,7 +1732,7 @@ case 'timer':
                                         const latensi = speed() - timestamp
                                         client.updatePresence(from, Presence.composing)
 				        uptime = process.uptime()
-                                        client.sendMessage(from, `Velocidad: *${latensi.toFixed(4)} _Second_*\nDevice: *Black Shark 3*\nRAM: *8/128*\nData: *Smartfren*\nJaringan: *5G*\nStatus: *Di Charger*`, text, { quoted: mek})
+                                        client.sendMessage(from, `Velocidad: *${latensi.toFixed(4)} _segundo_*\nDevice: *Tu tiburon*\nRAM: *8/128*\nData: *Smartfren*\nJaringan: *5G*\nStatus: *Cargando*`, text, { quoted: mek})
                                         break
                                 case 'neonlogo':
                                         var gh = body.slice(9)

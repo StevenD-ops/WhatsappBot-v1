@@ -9,9 +9,7 @@ const help = (prefix) => {
 
 ◪ *SOBRE*
   │
-  ├─ ❏ ${prefix}info
   ├─ ❏ ${prefix}blocklist
-  ├─ ❏ ${prefix}chatlist
   ├─ ❏ ${prefix}ping
   └─ ❏ ${prefix}bugreport
 
