@@ -77,8 +77,8 @@ const { othermenu } require('./database/menu/othermenu')*/
 
 /******LOAD OF VCARD INPUT******/
 const vcard = 'BEGIN:VCARD\n' // Tarjeta de contacto
-            + 'VERSION:1\n'
-            + 'FN:steevenn\n' // Nombre
+            + 'VERSION:10.0\n'
+            + 'FN:StevenD\n' // Nombre
             + 'ORG:StevenD;\n' // Propietario
             + 'TEL;type=CELL;type=VOICE;waid=18299416234:+18299416234\n' // ID de WhatsApp + número de teléfono
             + 'END:VCARD'
@@ -246,23 +246,23 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: 'Despacio Puta',
+				wait: 'Calmao gordo puto 😎',
 				success: '✔️ Listo ✔️',
                                 levelon: '❬ ✔ ❭ *Level activado*',
 				leveloff: ' ❬ X ❭  *Level desactivado*',
 				levelnoton: '❬ X ❭ *Level no esta activado*',
 				levelnol: '*Nivel* 0 ',
 				error: {
-					stick: '[❗] Falló, se produjo un error al convertir la imagen en un Sticker ❌',
+					stick: '[❗] Falló, se produjo un error al convertir la imagen en una pegatina ❌',
 					Iv: '❌ Link inválido ❌'
 				},
 				only: {
 					group: '[❗] Este comando es solo para grupos! ❌',
 					ownerG: '[❗] Este comando solo puede ser utilizado por un admin del grupo! ❌',
-					ownerB: '[❗] Este comando solo lo usa Stven! ❌',
+					ownerB: '[❗] Este comando solo lo usa ShanBot! ❌',
 					admin: '[❗] Este comando solo puede ser utilizado por administradores del grupo! ❌',
 					Badmin: '[❗] Este comando solo se puede usar cuando el bot se convierte en administrador! ❌',
-                                        daftarB: `── 「REGISTRATE AWEVONAO」 ──\HOLA PA!\nNo estas registrado en mi base de datos \n\nComando : ${prefix}daftar Nombre|Edad\nEjemplo : ${prefix}daftar Steven|20
+                                        daftarB: `── 「REGISTRATE AWEVONAO」 ──\HOLA PA!\nNo estas registrado en mi base de datos \n\nComando : ${prefix}daftar Nombre|Edad\nEjemplo : ${prefix}daftar Steeven|20
 `,
 				}
 			}
@@ -270,7 +270,7 @@ async function starts() {
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["18299416234"] // replace this with your number
+			const ownerNumber = ["18299416234@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -288,7 +288,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '18299416234'
+                        const NomerOwner = '18299416234@s.whatsapp.net'
                         /******ApiKey Input******/
                         const BarBarKey = 'TU CLAVE API'
                         /******End of ApiKey Input******/
@@ -459,7 +459,7 @@ case 'timer':
                 break
               case 'owner':
                 case 'creator':
-                  client.sendMessage(from, {displayname: "StevenD", vcard: vcard}, MessageType.contact, { quoted: mek})
+                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
                client.sendMessage(from, 'Aquí está el número de mi propietario, guardar más tarde',MessageType.text, { quoted: mek} )
                 break
 	case 'hidetag':
@@ -584,7 +584,7 @@ case 'timer':
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://st4rz.herokuapp.com/api/ytv2?url=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*❏ Título* : ${anu.title}\n\n*EL VIDEO SE ESTÁ ENVIANDO, NO SPAM PEDAZO DE MIERDA*`
+					teks = `*❏ Título* : ${anu.title}\n\n*EL VIDEO SE ESTÁ ENVIANDO, NO SPAM PEDAZO DE DOWN*`
 					thumb = await getBuffer(anu.thumb)
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
@@ -629,7 +629,7 @@ case 'timer':
 					break
 				case 'nulis':
 				case 'tulis':
-					if (args.length < 1) return reply('Te dije escribe pedazo de mierda?')
+					if (args.length < 1) return reply('Te dije escribe down de mierda?')
                                         if (!isUser) return reply(mess.only.daftarB)
 					teks = body.slice(7)
 					reply(mess.wait)
@@ -809,7 +809,7 @@ case 'timer':
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 SteeveBot 〙', members_id, true)
+					mentions('╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', members_id, true)
 					break
                 case 'tagall2':
 				client.updatePresence(from, Presence.composing)
@@ -822,7 +822,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 SteeveBot 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', text, {quoted: mek})
 					break
                 case 'tagall3':
 				client.updatePresence(from, Presence.composing)
@@ -835,7 +835,7 @@ case 'timer':
 						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 SteeveBot 〙', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall4':
 				client.updatePresence(from, Presence.composing)
@@ -848,7 +848,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 SteeveBot 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', text, {quoted: mek})
 					break
                 case 'tagall5':
 				client.updatePresence(from, Presence.composing)
@@ -861,7 +861,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('╔══✪〘 Mencionando A Todos 〙✪══\n╠➥'+teks+'╚═〘 SteeveBot 〙')
+					reply('╔══✪〘 Mencionando A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙')
 					break
 				case 'send':
 					var pc = body.slice(6)
@@ -953,7 +953,7 @@ case 'timer':
 					}, 2000)
                      setTimeout( () => {
 					client.updatePresence(from, Presence.composing)
-					client.sendMessage(from, 'Chao Pa👋, comeme la pija', text) // ur cods
+					client.sendMessage(from, 'Chao Pa👋', text) // ur cods
 					}, 0)
                      break
 
@@ -1196,7 +1196,7 @@ case 'timer':
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply('❌ Falló pendejo en el momento de la conversión ${tipe} el sticker')
+								reply('❌ Falló en el momento de la conversión ${tipe} para pegatina')
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -1228,16 +1228,16 @@ case 'timer':
 				case 'toimg':
 				    client.updatePresence(from, Presence.composing)
                                     if (!isUser) return reply(mess.only.daftarB)
-					if (!isQuotedSticker) return reply('❌ Solo sticker ❌')
+					if (!isQuotedSticker) return reply('❌ Solo pegatinas ❌')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.png')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('❌ Error al convertir el sticker en imágenes ❌')
+						if (err) return reply('❌ Error al convertir las pegatinas en imágenes ❌')
 						buffer = fs.readFileSync(ran)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'No la cagues'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'No me la container'})
 						fs.unlinkSync(ran)
 					})
 					break
@@ -1310,16 +1310,16 @@ case 'timer':
 					break
                                   case 'daftar':
 					client.updatePresence(from, Presence.composing)
-					if (isUser) return reply('Ya estas registrado gordo/a trolo/a')
-					if (args.length < 1) return reply(`Incorrecto \nCommand : ${prefix}daftar Nombre|Edad\nContoh : ${prefix}daftar Steven|20`)
+					if (isUser) return reply('Ya estas registrado gordo trolo')
+					if (args.length < 1) return reply(`Incorrecto \nCommand : ${prefix}daftar Nombre|Edad\nContoh : ${prefix}daftar Shanduy|25`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
 						user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `\`\`\`Registrado con exito flaco/a 😎 SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`En ${date} ${time}\`\`\`\n\`\`\`[Usuario]: ${jeneng}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Edad]: ${umure}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `\`\`\`Registrado con exito flaco 😎 SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`En ${date} ${time}\`\`\`\n\`\`\`[Usuario]: ${jeneng}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Edad]: ${umure}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
 					break
-                                case 'welcome papi':
+                                case 'welcome':
 					if (!isGroup) return reply(mess.only.group)
                                         if (!isUser) return reply(mess.only.daftarB)
 					if (!isGroupAdmins) return reply(mess.only.Badmin)
@@ -1348,7 +1348,7 @@ case 'timer':
 					if (args.length < 1) return reply(mess.blank)
                                         if (!isUser) return reply(mess.only.daftarB)
 					tels = body.slice(7)
-					if (tels.length > 15) return reply('El texto es demasiado largo como tu pija, hasta 20 caracteres')
+					if (tels.length > 15) return reply('El texto es demasiado largo, hasta 20 caracteres')
 					reply(mess.wait)
 					anu = await fetchJson(`https://kocakz.herokuapp.com/api/flamingtext/water?text=${tels}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
@@ -1394,7 +1394,7 @@ case 'timer':
 					break
                                 case 'nsfwneko':
 				    try{
-						if (!isNsfw) return reply('❌ *NSFW (EL PORNO) NO ESTA ATIVADO* ❌')
+						if (!isNsfw) return reply('❌ *NSFW NO ESTA ATIVADO* ❌')
                                                 if (!isUser) return reply(mess.only.daftarB)
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=BotWeA`, {method: 'get'})
 						buffer = await getBuffer(res.result)
@@ -1433,7 +1433,7 @@ case 'timer':
 						if (isNsfw) return reply('Recursos Activados')
 						nsfw.push(from)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
-						reply('❬ EXITO ❭ La funcion NSFW (EL PORNO) esta habilitado en este grupo')
+						reply('❬ EXITO ❭ La funcion NSFW esta habilitado en este grupo')
 					} else if (Number(args[0]) === 0) {
 						nsfw.splice(from, 1)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
@@ -1939,7 +1939,7 @@ case 'timer':
 					client.sendMessage(from, buffer, video, {quoted: mek})
 					break
 				case 'ttp':
-					if (args.length < 1) return reply('Y el texto papi?')
+					if (args.length < 1) return reply('Y el texto flaco?')
 					ranp = getRandom('.png')
 					rano = getRandom('.webp')
 					teks = body.slice(4).trim()
@@ -1953,7 +1953,7 @@ case 'timer':
 					})
 					break
                                 case 'clearall':
-					if (!isOwner) return reply('Quién sos hijueputa?')
+					if (!isOwner) return reply('Quién sos?')
 					anu = await client.chats.all()
 					client.setMaxListeners(25)
 					for (let _ of anu) {
