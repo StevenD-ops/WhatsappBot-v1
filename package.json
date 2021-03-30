@@ -1,7 +1,7 @@
 {
   "name": "steveebot",
-  "version": "0.0.1",
-  "description": "tu ere duro",
+  "version": "0.0.2",
+  "description": "Only termux",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -40,10 +40,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/StevenD-ops/WhatsappBot-v1.git"
+    "url": "git+https://github.com/shanduy/ShanBot.git"
   },
   "bugs": {
-    "url": "https://github.com/StevenD-ops/WhatsappBot-v1.git"
+    "url": "https://github.com/shanduy/ShanBot.git"
   },
-  "homepage": "https://github.com/StevenD-ops/WhatsappBot-v1#readme"
+  "homepage": "https://github.com/shanduy/ShanBot#readme"
 }
