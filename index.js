@@ -71,8 +71,8 @@ const { wibumenu } = require('./database/menu/wibumenu')
 const { funmenu } = require('./database/menu/funmenu')
 const { informationmenu } = require('./database/menu/informationmenu')
 const { 18+menu } require('./database/menu/18+menu')
-const { ownermenu } require('./database/menu/ownermenu')*/
-const { othermenu } require('./database/menu/othermenu')
+const { ownermenu } require('./database/menu/ownermenu')
+const { othermenu } require('./database/menu/othermenu')*/
 /******END OF MENU INPUT******/
 
 /******LOAD OF VCARD INPUT******/
@@ -341,10 +341,10 @@ async function starts() {
 				case 'menu':
 					client.sendMessage(from, help(prefix), text)
 					break
-    case 'makermenu':
-            hisil = fs.readFileSync('./src/makerimg.jpg')
-            client.sendMessage(from, hisil, image, {quoted: mek, caption: makermenu(prefix), text})
-            break
+                                /*case 'makermenu':
+                                        hisil = fs.readFileSync('./src/makerimg.jpg')
+                                        client.sendMessage(from, hisil, image, {quoted: mek, caption: makermenu(prefix), text})
+                                        break*/
 case 'timer':
 				if (args[1]=="detik") {var timer = args[0]+"000"
 				} else if (args[1]=="menit") {var timer = args[0]+"0000"
@@ -1762,12 +1762,12 @@ case 'timer':
                                         buffer = await getBuffer(anu.result)
                                         client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Eh...'})
                                         break
-                                case 'jsholat':
+                                /*case 'jsholat':
                                         tels = body.slice(8)
                                         if (args.length < 1) return reply('No se que mierda es esto loco')
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/jadwalshalat?q=${tels}&apikey=BotWeA`, {method: 'get'})
                                         reply(anu.result)
-                                        break
+                                        break*/
                                 case 'jokerlogo':
                                         var gh = body.slice(10)
                                         var teks1 = gh.split("|")[0];
@@ -2001,7 +2001,7 @@ case 'timer':
 						reply('Fallido mi pana')
 					}
 					break
-                                case 'magernulis':
+                                /*case 'magernulis':
                                         var gh = body.slice(11)
                                         var teks7 = gh.split("|")[0];
                                         var teks2 = gh.split("|")[1];
@@ -2011,7 +2011,7 @@ case 'timer':
                                         anu = await fetchJson(`http://api-melodicxt.herokuapp.com/api/joki-nulis?text=${teks7}&nama=${teks2}&kelas=${teks3}&apiKey=administrator`, {method: 'get'})
                                         buffer = await getBuffer(anu.result.result)
                                         client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih kak...'})
-                                        break
+                                        break*/
                                 case 'pubglogo':
                                         var gh = body.slice(9)
                                         var teks1 = gh.split("|")[0];
