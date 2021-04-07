@@ -57,7 +57,7 @@ const { logomaker } = require('./database/menu/logomaker')
 const { toinmenu } = require('./src/toinmenu')
 const { menuadmin } = require('./src/menuadmin')
 const { nsfwmenu } = require('./src/nsfwmenu')
-/*const { mediamenu } = require('./database/menu/mediamenu')
+const { mediamenu } = require('./database/menu/mediamenu')
 const { educationmenu } = require('./database/menu/educationmenu')
 const { downloadermenu } = require('./database/menu/downloadermenu')
 const { mememenu } = require('./database/menu/mememenu')
@@ -72,7 +72,7 @@ const { funmenu } = require('./database/menu/funmenu')
 const { informationmenu } = require('./database/menu/informationmenu')
 const { 18+menu } require('./database/menu/18+menu')
 const { ownermenu } require('./database/menu/ownermenu')
-const { othermenu } require('./database/menu/othermenu')*/
+const { othermenu } require('./database/menu/othermenu')
 /******END OF MENU INPUT******/
 
 /******LOAD OF VCARD INPUT******/
