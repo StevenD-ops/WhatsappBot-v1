@@ -1,36 +1,33 @@
 const help = (prefix) => {
 	return `
-「 *Botcito* 」
+「 *Bender Bot* 」
 
 ◪ *Información*
   ❏ Comando: 「  ${prefix}  」
   ❏ Creador: StevenD
   ❏ Como instalar el bot: Solo agregre a sus contacto a Botcito y registrese.
 
-◪ *SOBRE*
-  │
-  ├─ ❏ ${prefix}blocklist
-  ├─ ❏ ${prefix}ping
-  └─ ❏ ${prefix}bugreport
-
-◪ *CREAR*
+◪ *Sticker*
   │
   ├─ ❏ ${prefix}sticker
   ├─ ❏ ${prefix}stickergif
   ├─ ❏ ${prefix}toimg
   └─ ❏ ${prefix}tomp3
 
-◪ *DESCARGAS*
+◪ *DESCARGAS DE YOUTUBE*
   │
   └─ ❏ ${prefix}ytmp4
 
-◪ *AUDIO*
+◪ *AUDIO *
   │
+	├─ ❏ ${prefix}bahasa
   └─ ❏ ${prefix}tts
 
-◪ *DUEÑO*
+
+◪ *ADMIN*
   │
-  ├─ ❏ ${prefix}setprefix
+  ├─ ❏ ${prefix}menuadmin
+	├─ ❏ ${prefix}setprefix
   ├─ ❏ ${prefix}block
   ├─ ❏ ${prefix}bc
   ├─ ❏ ${prefix}bcgc
@@ -39,20 +36,32 @@ const help = (prefix) => {
 
 ◪ *OTROS*
   │
-  ├─ ❏ ${prefix}send
   ├─ ❏ ${prefix}wame
-  ├─ ❏ ${prefix}virtex (Hernqn)
-  ├─ ❏ ${prefix}exe
   ├─ ❏ ${prefix}qrcode
-  ├─ ❏ ${prefix}afk
-  ├─ ❏ ${prefix}timer
-  ├─ ❏ ${prefix}fml
-  └─ ❏ ${prefix}fml2
+  ├─ ❏ ${prefix}toinmenu
+
 
 	hermano tengo hambre
 	hazme una donación
 
 `
 }
+/*
+◪ *SOBRE*
+  │  ├─ ❏ ${prefix}send
+	├─ ❏ ${prefix}virtex (Hernqn)
+	├─ ❏ ${prefix}exe
+	├─ ❏ ${prefix}afk
+	├─ ❏ ${prefix}timer
+	├─ ❏ ${prefix}fml
+	└─ ❏ ${prefix}fml2
+  ├─ ❏ ${prefix}blocklist
+  ├─ ❏ ${prefix}ping
+  └─ ❏ ${prefix}bugreport
 
+
+
+
+
+	*/
 exports.help = help
