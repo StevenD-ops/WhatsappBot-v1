@@ -345,7 +345,7 @@ async function starts() {
 
        /******END OF FUNCTIONS INPUT******/
 			switch(command) {
-				case 'help':
+				case 'ayuda':
 				case 'menu':
 					client.sendMessage(from, help(help), text)
 					break
