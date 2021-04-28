@@ -7,7 +7,7 @@ const help = (prefix) => {
 ❏ Creador: StevenD
 ❏ Como instalar el bot: Solo agregre a sus contacto a Botcito y registrese.
 ❏ Bot aun en Desarrollo. tengan paciencia, pronto vendran mas actualizaciones
-	❏ Cualquier inconvendiente que presente favor de cominicar
+	❏ Cualquier inconvendiente que presente favor de comunicar
 
 ◪ *Sticker*
   │
