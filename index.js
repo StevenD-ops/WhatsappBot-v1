@@ -2030,7 +2030,7 @@ case 'timer':
                                         buffer = await getBuffer(anu.result)
                                         client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aquí esta la foto ...'})
                                         break
-                               /* case 'herrypotter':
+                                case 'herrypotter':
                                 case 'harrypotter':
                                         var gh = body.slice(12)
                                         if (args.length < 1) return reply(`Donde esta el texto?\nEjemplo: ${prefix}harrypotter Botcito`)
@@ -2038,7 +2038,7 @@ case 'timer':
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=harry_potter&text=${gh}&apikey=BotWeA`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
                                         client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Aquí esta la foto ...'})
-                                        break */
+                                        break
 			 	case 'wait':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
                                         if (!isUser) return reply(mess.only.daftarB)
